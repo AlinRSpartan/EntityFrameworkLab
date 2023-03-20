@@ -12,4 +12,9 @@ public partial class Trainee
     public string? Course { get; set; }
 
     public string? Location { get; set; }
+
+    public override string ToString()
+    {
+        return $"{TraineeId} - {Name} - {Course} - {Location}";
+    }
 }
